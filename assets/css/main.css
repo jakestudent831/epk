@@ -7,6 +7,11 @@
   src: url('futura.otf'); /* IE9 Compat Modes */
 }
 
+input#vol-slider {
+    width: 100%;
+    max-width: 400px;
+}
+
 img.header-image {
     width: 100%;
     margin-bottom: 20px;
