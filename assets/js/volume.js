@@ -2,6 +2,7 @@ var preVid = document.getElementById('precomp')
 console.log('Hello')
 
 document.onload = function(e){
+    console.log('test')
     console.log('e', e)
     preVid.volume = 0
 }
