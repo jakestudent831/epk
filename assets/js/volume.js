@@ -2,7 +2,7 @@ var preVid = document.getElementById('precomp')
 
 var volLevel = document.getElementById('volume-slider')
 volLevel.onchange = function (e) {
-	video.volume= 0
+	volLevel.volume= 0
     console.log('preVid.volume', preVid.volume)
     console.log('volLevel.value', volLevel.value)
     preVid.volume = volLevel.value
