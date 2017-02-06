@@ -1,5 +1,6 @@
 var preVid = document.getElementById('precomp')
 document.onload = function(e){
+    console.log('e', e)
     preVid.volume = 0
 }
 
