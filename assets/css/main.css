@@ -7,7 +7,7 @@
   src: url('futura.otf'); /* IE9 Compat Modes */
 }
 
-input#vol-slider {
+input#volume-slider {
     width: 100%;
     max-width: 400px;
 }
