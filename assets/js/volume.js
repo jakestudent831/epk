@@ -5,5 +5,5 @@ document.onload = function(e){
 
 var volLevel = document.getElementById('volume-slider')
 volLevel.onchange = function (e) {
-    preVid.volume = volLevel.volume
+    preVid.volume = volLevel.value
 }       
