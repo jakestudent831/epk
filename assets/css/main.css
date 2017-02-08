@@ -126,6 +126,11 @@ input.reveal-button {
 section#three {
     padding: 40px;
 }
+
+	.spotlight .content {
+			padding-right: 3em;
+		}
+
 }
 
 /*
@@ -2959,6 +2964,10 @@ a.book-DL {
 		display: flex;
 	}
 
+
+	.content iframe {
+    	max-width: 750px;
+	}
 		.spotlight .image {
 			-moz-order: 1;
 			-webkit-order: 1;
@@ -2974,7 +2983,7 @@ a.book-DL {
 			}
 
 		.spotlight .content {
-			padding: 2em 8em 0.1em 2em;
+			padding: 2em;
 			-moz-order: 2;
 			-webkit-order: 2;
 			-ms-order: 2;
