@@ -12,61 +12,34 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,800' rel='stylesheet' type='text/css'>
         <link href="assets/css/video-js.css" rel="stylesheet">
-
-
-        <script>
-        function ShowDiv() {
-            document.getElementById("reveal").style.display = "block";
-        }
-
-        </script>
-
-
-
     </head>
-
-
 	<body class="landing">
-
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
-
 				<!-- Header -->
 					<header id="header" class="alt">
-                    
-						
 						
 					</header>
-
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
 							<p style="color:#fff;" class="pmargentop">CHECKERS</p>
 							<img class="header-image" src="assets/images/casey-header.jpg">
-
-
 							<p class="blurb">From the depths of the underground comes Checkers, a dedicated DJ/producer with a wide spectrum of music intertwining through multiple genres. Checkers intricately weaves the balance between reading a crowd and playing music that inspires and drives him personally.
 </p>
 
-<input type="button" name="answer" class="reveal-button" value="Read More" onclick="ShowDiv()" />
+<input type="button" name="answer" class="reveal-button" id='read-more' value="Read More" onclick="ShowDiv(event)" />
 <p class="blurb" id="reveal">
 To date, Checkers has played a robust span of highly acclaimed festivals and venues with highlights including Electric Daisy Carnival (Las Vegas), Circuit of the Americas (Austin), and has played along side names like Carl Cox and Croatia Squad. 
 <br><br>
 Whether it's rocking a warehouse, a high-profile venue, or a festival Checkers brings his finely tuned appreciation for exceptional music that moves your soul each and every time he touches the decks. His dedication and devotion to curating an uplifting and inspirational vibe shines a light on the unwavering passion that drives his craft.</p>
-                            
-							
-                          
+<input type="button" name="answer" class="reveal-button" id='read-less' value="Read Less"style="display: none" onclick="HideDiv(event)" />
 						</div>
-
-                       
                         <!--
 						<a href="#one" class="more scrolly"></a>
                      -->
 					</section>
-
-                        
 				<!-- One -->
-                	
 					<section id="two" class="wrapper alt style2 blurb">
 						<section class="spotlight">
 							<div class="image">
@@ -293,6 +266,22 @@ August 21 @ Mad Decent Block Party, Chicago
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
             <script src="assets/js/main.js"></script>
+            <script>
+                function ShowDiv(e) {
+                    document.getElementById("reveal").style.display = "block";
+                    e.target.style.display = 'none'
+                    document.getElementById("read-less").style.display = "block";
+
+                }
+                function HideDiv(e) {
+                    console.log('hide div')
+                    document.getElementById("reveal").style.display = "none"
+                    e.target.style.display = 'none'
+                    document.getElementById("read-more").style.display = "block";
+
+                }
+
+            </script>
 
             
 
