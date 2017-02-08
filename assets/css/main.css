@@ -1336,6 +1336,10 @@ a.book-DL {
 	}
 
 	@media (max-width: 550px){
+
+		.my-video-dimensions {
+			width: 100% !important;
+		}
 		#reveal {
 			display: none;
 		}

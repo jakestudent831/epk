@@ -252,7 +252,10 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none; 
+  margin-left: auto;
+  margin-right: auto;
+}
   .video-js:-moz-full-screen {
     position: absolute; }
   .video-js:-webkit-full-screen {
