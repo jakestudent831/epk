@@ -1305,3 +1305,7 @@ video::-webkit-media-text-track-display {
     visibility: hidden;
   }
 }
+
+.vjs-nofull .vjs-fullscreen-control {
+    display:none;
+}
