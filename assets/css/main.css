@@ -122,6 +122,12 @@ input.reveal-button {
     width: 100%;
 }
 
+@media (min-width: 1200px){
+section#three {
+    padding: 40px;
+}
+}
+
 /*
 	Spectral by HTML5 UP
 	html5up.net | @n33co
@@ -2624,7 +2630,7 @@ a.book-DL {
 			}
 
 		table td {
-			padding: 0.75em 0.75em;
+			padding: 0.45em 0.45em;
 		}
 
 		table th {
@@ -3292,6 +3298,7 @@ a.book-DL {
 			color: #d3d4e4;
 			box-shadow: inset 0 0 31px #000000;
 			background-size: 100%;
+			background-position: center;
 		}
 
 
@@ -3299,7 +3306,7 @@ a.book-DL {
 			.wrapper.style3  {
 			   background: url(images/abstract-mobile.jpg);
 			   background-attachment: fixed;
-			   background-size: auto 100%;
+			   background-size: auto 100% !important;
 			}
 		}
 
