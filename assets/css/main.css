@@ -6,10 +6,98 @@
   font-family: 'futura';
   src: url('futura.otf'); /* IE9 Compat Modes */
 }
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 80%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #6e8192;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+input[type=range]::-moz-range-track {
+  width: 80%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 80%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #395369;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #395369;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #395369;
+}
 
 input#volume-slider {
-    width: 100%;
+    width: 80%;
     max-width: 400px;
+    background-color: #1e2b58;
 }
 
 img.header-image {
@@ -1811,7 +1899,6 @@ a.book-DL {
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px;
 		color: inherit;
 		text-decoration: none;
 	}
@@ -2911,10 +2998,18 @@ a.book-DL {
 
 		}
 
-		@media (max-width: 1299px) {
+		@media (min-width: 751px) and (max-width: 1299px) {
 			.spotlight:nth-child(1) {
 			   background: url(images/mixer.jpg);
 			   background-attachment: fixed;
+			}
+		}
+
+		@media (max-width: 750px) {
+			.spotlight:nth-child(1) {
+			   background: url(images/mixer-mobile.jpg);
+			   background-attachment: fixed;
+			   background-size: auto 100%;
 			}
 		}
 
@@ -3194,11 +3289,20 @@ a.book-DL {
 
 		.wrapper.style3 {
 			 background: url(images/abstract-bg.jpg);
-			-webkit-animation: pulse 10s infinite alternate;
 			color: #d3d4e4;
 			box-shadow: inset 0 0 31px #000000;
 			background-size: 100%;
 		}
+
+
+		@media (max-width: 750px) {
+			.wrapper.style3  {
+			   background: url(images/abstract-mobile.jpg);
+			   background-attachment: fixed;
+			   background-size: auto 100%;
+			}
+		}
+
 
 			.wrapper.style3 strong, .wrapper.style3 b {
 				color: #ffffff;
@@ -4240,7 +4344,6 @@ a.book-DL {
 
 	body.landing #page-wrapper {
 		background-color: #cfdee5;
-  -webkit-animation: pulse 10s infinite alternate;
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -4259,7 +4362,6 @@ a.book-DL {
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
 		background-color: #cfdee5;
-  -webkit-animation: pulse 10s infinite alternate;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
